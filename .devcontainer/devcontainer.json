@@ -6,14 +6,10 @@
     // 2023-06-29: Use bullseye image instead of bookworm.
     // At time of writing, bookworm is new and may have issues with dev containers:
     // https://github.com/devcontainers/features/issues/576
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+    "image": "mcr.microsoft.com/devcontainers/python:3.14",
     // Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
-            // This is incompatible with the Debian Trixie image we are using
-            // See: https://github.com/opensafely/ehrql-tutorial/pull/31
             "moby": false
         }
     },
