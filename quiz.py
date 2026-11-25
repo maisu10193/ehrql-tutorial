@@ -34,7 +34,7 @@ questions[0].check(
 
 # Question 1
 # Create a patient series containing the date of each patient's earliest diabetes diagnosis.
-questions[1].check(clinical_events.where(clinical_events))
+questions[1].check(...)
 # If you need a hint for this, or any other, question, just uncomment (remove the #) from the following line:
 # questions[1].hint()
 
